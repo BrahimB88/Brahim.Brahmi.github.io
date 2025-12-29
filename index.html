@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brahim Brahmi - Professor & Researcher</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">Brahim Brahmi</a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#research">Research</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="eyebrow">Professor & Researcher</span>
+                    <h1>Bridging Theory with <span class="highlight">Innovation</span></h1>
+                    <p class="lead">Dedicated to advancing knowledge in Computer Science and Engineering. Focusing on impactful research and mentoring the next generation of various technologists.</p>
+                    <div class="hero-actions">
+                        <a href="#research" class="btn btn-primary">My Research</a>
+                        <a href="assets/cv.pdf" class="btn btn-outline" target="_blank" download>Download CV</a>
+                    </div>
+                </div>
+                <!-- Placeholder for profile image - user can replace later -->
+                <div class="hero-image-wrapper">
+                    <div class="hero-image-placeholder">
+                        <span>Photo</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>I am a passionate academic professional with a strong background in research and teaching. My work primarily revolves around [Research Area 1], [Research Area 2], and [Research Area 3].</p>
+                        <p>With years of experience in higher education, I strive to create an engaging learning environment while pushing the boundaries of scientific inquiry through rigorous research and collaboration.</p>
+                        <ul class="stats-list">
+                            <li>
+                                <span class="stat-number">10+</span>
+                                <span class="stat-label">Years Experience</span>
+                            </li>
+                            <li>
+                                <span class="stat-number">20+</span>
+                                <span class="stat-label">Publications</span>
+                            </li>
+                            <li>
+                                <span class="stat-number">5+</span>
+                                <span class="stat-label">Current Projects</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="research" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">Research Interests</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <i data-lucide="cpu" class="card-icon"></i>
+                        <h3>Artificial Intelligence</h3>
+                        <p>Exploring advanced machine learning algorithms and their applications in solving complex real-world problems.</p>
+                    </div>
+                    <div class="card">
+                        <i data-lucide="network" class="card-icon"></i>
+                        <h3>Data Science</h3>
+                        <p>Analyzing large-scale datasets to uncover patterns, trends, and actionable insights.</p>
+                    </div>
+                    <div class="card">
+                        <i data-lucide="code" class="card-icon"></i>
+                        <h3>Software Engineering</h3>
+                        <p>Investigating methodologies for building robust, scalable, and maintainable software systems.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="github" class="section">
+            <div class="container">
+                <h2 class="section-title">Open Source & Projects</h2>
+                <p class="section-subtitle">A selection of my recent work on GitHub (@BrahimB88).</p>
+                <div id="github-repos" class="github-grid">
+                    <!-- Repositories will be loaded here via JavaScript -->
+                    <div class="loading-spinner">Loading repositories...</div>
+                </div>
+                <div class="text-center mt-4">
+                    <a href="https://github.com/BrahimB88" target="_blank" class="btn btn-outline small">View All on GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="publications" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">Selected Publications</h2>
+                <div class="publication-list">
+                    <article class="pub-item">
+                        <span class="pub-year">2024</span>
+                        <div class="pub-content">
+                            <h3>Advanced Methodologies in Modern Computing</h3>
+                            <p class="pub-authors">B. Brahmi, J. Doe, A. Smith</p>
+                            <p class="pub-journal">Journal of Computing Research, Vol 45.</p>
+                        </div>
+                    </article>
+                    <article class="pub-item">
+                        <span class="pub-year">2023</span>
+                        <div class="pub-content">
+                            <h3>Neural Networks for Predictive Analysis</h3>
+                            <p class="pub-authors">B. Brahmi, K. Johnson</p>
+                            <p class="pub-journal">International Conference on AI Data.</p>
+                        </div>
+                    </article>
+                    <!-- Add more publications here -->
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container contact-container">
+                <div class="contact-info">
+                    <h2 class="section-title">Get in Touch</h2>
+                    <p>I am always open to discussing new research collaborations or answering student inquiries.</p>
+                    <a href="mailto:email@university.edu" class="contact-link">
+                        <i data-lucide="mail"></i>
+                        email@university.edu
+                    </a>
+                    <div class="social-links">
+                        <a href="https://github.com/BrahimB88" target="_blank" aria-label="GitHub"><i data-lucide="github"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                        <a href="#" aria-label="Google Scholar"><i data-lucide="graduation-cap"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Brahim Brahmi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
