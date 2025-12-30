@@ -11,6 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Inter:wght@300;400;600&display=swap"
         rel="stylesheet">
+    <link rel="icon" href="profile.jpg" type="image/jpeg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
@@ -24,7 +25,7 @@
     <!-- Navigation -->
     <nav>
         <div class="container">
-            <a href="#" class="logo">Dr. Brahim Brahmi<span style="color:var(--accent-primary)">.</span></a>
+            <a href="#" class="logo">Dr. Brahim Brahmi</a>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#research">Research</a></li>
@@ -92,42 +93,44 @@
     <section id="research">
         <div class="container">
             <h2 class="fade-up">Research Interests</h2>
-            <div class="grid">
-                <!-- Interest 1 -->
-                <div class="card fade-up">
-                    <i class="fas fa-robot"
-                        style="font-size: 2rem; color: var(--accent-primary); margin-bottom: 1rem;"></i>
-                    <h3>Bio-Robotics</h3>
-                    <p style="margin-top: 0.5rem; color: var(--text-secondary);">
-                        Wearable robots, rehabilitation robotics, exoskeletons for motion assistance, and human-machine
-                        interfaces.
-                    </p>
+            <div class="research-grid">
+                <!-- Interest 1: Adaptive & AI Control -->
+                <div class="research-card fade-up">
+                    <img src="research_ai.png" alt="Adaptive AI Control">
+                    <div class="overlay"></div>
+                    <div class="research-card-content">
+                        <h3>Adaptive Robotics & AI</h3>
+                        <p>Adaptive controller, neural networks, and AI-based control for uncertain robotic systems.</p>
+                    </div>
                 </div>
-                <!-- Interest 2 -->
-                <div class="card fade-up" style="transition-delay: 0.1s;">
-                    <i class="fas fa-brain"
-                        style="font-size: 2rem; color: var(--accent-secondary); margin-bottom: 1rem;"></i>
-                    <h3>Intelligent Control</h3>
-                    <p style="margin-top: 0.5rem; color: var(--text-secondary);">
-                        Nonlinear control, AI, neural networks, adaptive control, and data-driven control using
-                        biological signals.
-                    </p>
+                <!-- Interest 2: Drones & Mobile -->
+                <div class="research-card fade-up" style="transition-delay: 0.1s;">
+                    <img src="research_drone.png" alt="Drones and Mobile Manipulators">
+                    <div class="overlay"></div>
+                    <div class="research-card-content">
+                        <h3>Drones & Mobile Manipulators</h3>
+                        <p>Advanced control for UAVs, quadrotors, and mobile manipulation in dynamic environments.</p>
+                    </div>
                 </div>
-                <!-- Interest 3 -->
-                <div class="card fade-up" style="transition-delay: 0.2s;">
-                    <i class="fas fa-network-wired" style="font-size: 2rem; color: #00ff88; margin-bottom: 1rem;"></i>
-                    <h3>IIoT & Digital Twin</h3>
-                    <p style="margin-top: 0.5rem; color: var(--text-secondary);">
-                        Mixed-Reality, Augmented Reality, Teleoperation, and digitalization of industrial processes.
-                    </p>
+                <!-- Interest 3: Rehab & Bio-Robotics -->
+                <div class="research-card fade-up" style="transition-delay: 0.2s;">
+                    <img src="research_rehab.png" alt="Rehabilitation Robotics">
+                    <div class="overlay"></div>
+                    <div class="research-card-content">
+                        <h3>Rehabilitation & Bio-Robotics</h3>
+                        <p>Wearable exoskeletons, human-robot interaction, and haptic feedback for medical applications.
+                        </p>
+                    </div>
                 </div>
-                <!-- Interest 4 -->
-                <div class="card fade-up" style="transition-delay: 0.3s;">
-                    <i class="fas fa-bolt" style="font-size: 2rem; color: #ff0055; margin-bottom: 1rem;"></i>
-                    <h3>Smart Energy</h3>
-                    <p style="margin-top: 0.5rem; color: var(--text-secondary);">
-                        Control applied on Smart Grid and renewable energy systems.
-                    </p>
+                <!-- Interest 4: IIoT -->
+                <div class="research-card fade-up" style="transition-delay: 0.3s;">
+                    <img src="https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?q=80&w=1000&auto=format&fit=crop"
+                        alt="IIoT and Smart Energy">
+                    <div class="overlay"></div>
+                    <div class="research-card-content">
+                        <h3>IIoT & Smart Systems</h3>
+                        <p>Internet of Things, Digital Twins, and Smart Energy management for industrial automation.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -306,7 +309,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Dr. Brahim Brahmi. All rights reserved.</p>
+            <p>&copy; 2025 Dr. Brahim Brahmi, All rights reserved.</p>
         </div>
     </footer>
 
