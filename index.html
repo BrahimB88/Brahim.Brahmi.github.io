@@ -222,6 +222,8 @@
                         <h3>Adaptive HRC Control</h3>
                         <p>Adaptive Learning Control Design for Safe and Efficient Human-Robot Collaboration in Dynamic
                             Industrial Environments.</p>
+                        <button class="btn" style="margin-top: 1rem; padding: 0.5rem 1.5rem; font-size: 0.9rem;"
+                            onclick="openModal('project1')">Read More</button>
                     </div>
                 </div>
             </div>
@@ -404,6 +406,57 @@
             <p>&copy; 2025 Dr. Brahim Brahmi, All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Project Modal -->
+    <div id="project1" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal('project1')">&times;</span>
+            <div class="modal-header">
+                <h2>Adaptive Learning Control Design for Safe and Efficient Human-Robot Collaboration</h2>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Human–robot collaboration (HRC) is becoming a cornerstone of modern manufacturing and dynamic
+                    industrial environments; however, achieving safe, efficient, and intuitive interaction remains
+                    challenging due to system instability, overly conservative safety constraints, and limited
+                    adaptability
+                    to individual human behaviors. This project proposes an adaptive learning control framework that
+                    integrates advanced stability-guaranteed control with preference-based reinforcement learning (PbRL)
+                    to
+                    enable safe, flexible, and personalized human–robot collaboration.
+                </p>
+                <p>
+                    Unlike conventional passivity-based controllers that excessively restrict robot dynamics to ensure
+                    safety, the proposed control strategy allows controlled non-passive energy exchange while rigorously
+                    preserving system stability through Lyapunov-based analysis. This reduces conservatism and improves
+                    assistive performance during physical human–robot interaction. To address variability in human
+                    behavior,
+                    a novel PbRL paradigm is developed to incorporate human preferences directly into the learning
+                    process,
+                    enabling rapid adaptation without extensive retraining or reliance on predefined demonstrations.
+                </p>
+                <p>
+                    The proposed methods are validated on a 6-DOF robotic manipulator equipped with force/torque and
+                    physiological sensing, and evaluated through simulation and real-world collaborative tasks such as
+                    precision assembly and object handover. Performance is benchmarked against rigid safety limits,
+                    classical passivity-based controllers, and rule-based learning approaches using metrics including
+                    stability, task efficiency, force smoothness, and user satisfaction. This work advances the state of
+                    the
+                    art in collaborative robotics by bridging stability-guaranteed control with human-centered learning
+                    for
+                    intelligent manufacturing applications.
+                </p>
+                <div class="funding-section">
+                    <h4>Funding Information</h4>
+                    <p>
+                        This work is supported by the King Fahd University of Petroleum and Minerals through the Center
+                        for
+                        Interdisciplinary Research on Intelligent Manufacturing and Robotics, Grant No. INMR250.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>

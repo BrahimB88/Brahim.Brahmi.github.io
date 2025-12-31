@@ -383,8 +383,95 @@ footer {
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.research-card p {
-  color: rgba(255, 255, 255, 0.9);
-  font-size: 0.95rem;
-  line-height: 1.5;
+/* ... existing code ... */
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(5, 5, 16, 0.9);
+  backdrop-filter: blur(8px);
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.modal.show {
+  display: flex;
+  opacity: 1;
+}
+
+.modal-content {
+  background-color: #0f1020;
+  margin: 2rem;
+  padding: 3rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  width: 90%;
+  max-width: 800px;
+  border-radius: 16px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  position: relative;
+  transform: translateY(20px);
+  transition: transform 0.3s ease;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modal.show .modal-content {
+  transform: translateY(0);
+}
+
+.close-button {
+  color: var(--text-secondary);
+  float: right;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: var(--transition);
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  line-height: 1;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: var(--accent-primary);
+  text-decoration: none;
+}
+
+.modal-header h2 {
+  color: var(--text-primary);
+  margin-bottom: 2rem;
+  padding-right: 2rem;
+}
+
+.modal-body p {
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.modal-body strong {
+  color: var(--text-primary);
+}
+
+.funding-section {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.funding-section h4 {
+  color: var(--accent-primary);
+  margin-bottom: 1rem;
 }
