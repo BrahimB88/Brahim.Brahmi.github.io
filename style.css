@@ -383,8 +383,6 @@ footer {
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-/* ... existing code ... */
-
 /* Modal Styles */
 .modal {
   display: none;
@@ -474,4 +472,79 @@ footer {
 .funding-section h4 {
   color: var(--accent-primary);
   margin-bottom: 1rem;
+}
+
+/* People Section */
+.people-category {
+  margin-top: 4rem;
+}
+
+.people-category h3 {
+  color: var(--accent-primary);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.person-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+  margin-top: 2rem;
+}
+
+.person-card {
+  background: var(--card-bg);
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  text-align: center;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.person-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent-primary);
+  box-shadow: 0 10px 30px rgba(0, 242, 255, 0.1);
+}
+
+.person-img-wrapper {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.person-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--accent-primary);
+  padding: 5px;
+  background: var(--bg-color);
+  display: block;
+}
+
+.person-card h4 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.person-card .role {
+  color: var(--accent-primary);
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.person-card p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
 }
