@@ -121,6 +121,18 @@ nav .container {
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.nav-profile-img {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent-primary);
+  background: var(--bg-color);
 }
 
 .nav-links {
@@ -636,7 +648,9 @@ footer {
   }
 
   /* Grid Adjustments */
-  .grid, .research-grid, .person-grid {
+  .grid,
+  .research-grid,
+  .person-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
